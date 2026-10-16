@@ -1,0 +1,260 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7fb;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar-pink {
+    background: linear-gradient(90deg, #e75480, #f58caf);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.navbar-pink .nav-link {
+    color: white;
+    margin-left: 12px;
+    transition: 0.3s;
+}
+
+.navbar-pink .nav-link:hover,
+.navbar-pink .nav-link.active {
+    color: #ffe3ed;
+}
+
+/* Beranda */
+.hero {
+    padding: 90px 0;
+    background: linear-gradient(135deg, #fff0f6, #ffe0ec);
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #383038;
+}
+
+.hero h1 span,
+.text-pink {
+    color: #e75480;
+}
+
+.hero h4 {
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+/* Foto profil */
+.profile-image {
+    width: 270px;
+    height: 320px;
+    object-fit: cover;
+    border: 7px solid white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(180, 65, 110, 0.2);
+}
+
+.foto-error {
+    max-width: 200px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #ffe0ec;
+    color: #a32352;
+    border-radius: 10px;
+}
+
+/* Tombol */
+.btn-pink {
+    display: inline-block;
+    background-color: #e75480;
+    color: white;
+    border: 2px solid #e75480;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-pink:hover {
+    background-color: #c93c69;
+    border-color: #c93c69;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-pink {
+    display: inline-block;
+    border: 2px solid #e75480;
+    color: #e75480;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.btn-outline-pink:hover {
+    background-color: #e75480;
+    color: white;
+}
+
+/* Bagian umum */
+.section-padding {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.section-title {
+    color: #d94373;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Kartu proyek */
+.project-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(180, 65, 110, 0.1);
+    border: 1px solid #ffe0ec;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(180, 65, 110, 0.18);
+}
+
+.project-card h4 {
+    color: #d94373;
+    margin: 15px 0;
+}
+
+.project-icon {
+    font-size: 42px;
+}
+
+/* Detail proyek */
+.detail-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(180, 65, 110, 0.1);
+}
+
+.detail-card h1,
+.detail-card h5 {
+    color: #d94373;
+}
+
+.detail-card h1 {
+    margin-bottom: 20px;
+}
+
+.detail-card h5 {
+    margin-top: 25px;
+}
+
+/* Profil */
+.profile-info {
+    background-color: #fff0f6;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.profile-info p {
+    margin-bottom: 8px;
+}
+
+/* Login */
+.login-section {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fff0f6, #ffe0ec);
+}
+
+.login-card {
+    background-color: white;
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(180, 65, 110, 0.15);
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #f3bfd0;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    border-color: #e75480;
+    box-shadow: 0 0 0 0.2rem rgba(231, 84, 128, 0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: #d94373;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 260px;
+    }
+
+    .btn-outline-pink {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .detail-card,
+    .login-card {
+        padding: 25px;
+    }
+}
